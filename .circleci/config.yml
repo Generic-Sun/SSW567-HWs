@@ -14,4 +14,4 @@ jobs:
             pip install requests
       - run:
           name: Run Unit Tests
-          command: python -m unittest test_github_api.py
+          command: python -m unittest test.py
