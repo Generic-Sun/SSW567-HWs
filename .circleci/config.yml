@@ -13,4 +13,4 @@ jobs:
             pip install requests
       - run:
           name: Run Unit Tests
-          command: python -m unittest HW03a/test.py
+          command: python HW03a/test.py
