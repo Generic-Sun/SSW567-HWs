@@ -3,8 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      # Using a CircleCI-maintained Python image
-      - image: cimg/python:3.10
+      - image: cimg/python:3.14.2
     steps:
       - checkout
       - run:
@@ -14,4 +13,4 @@ jobs:
             pip install requests
       - run:
           name: Run Unit Tests
-          command: python -m unittest test.py
+          command: python HW03a/test.py
